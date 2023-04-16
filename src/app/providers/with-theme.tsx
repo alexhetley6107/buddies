@@ -7,7 +7,7 @@ export const withTheme = (component: () => React.ReactNode) => () => {
       primary: {
         light: 'rgb(90, 147, 211)',
         main: 'rgb(36, 90, 165)',
-        dark: 'rgb(10, 62, 144)',
+        dark: 'rgb(70, 12, 114)',
       },
       info: {
         main: 'rgba(255, 255, 255, 1)',

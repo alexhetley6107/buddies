@@ -1,7 +1,8 @@
+import { Routing } from 'pages';
 import { withProviders } from './providers';
 
 const App = () => {
-  return <div className="App">Buddies</div>;
+  return <Routing />;
 };
 
 export default withProviders(App);
