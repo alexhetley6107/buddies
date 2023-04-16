@@ -5,8 +5,8 @@ export const withTheme = (component: () => React.ReactNode) => () => {
   const theme = createTheme({
     palette: {
       primary: {
-        light: 'rgb(90, 147, 211)',
-        main: 'rgb(36, 90, 165)',
+        light: 'rgba(66, 27, 111, 0.3)',
+        main: 'rgb(76, 20, 155)',
         dark: 'rgb(70, 12, 114)',
       },
       info: {
@@ -14,10 +14,7 @@ export const withTheme = (component: () => React.ReactNode) => () => {
         light: 'rgba(226, 226, 226, 1)',
         dark: 'rgba(122, 122, 122, 1)',
       },
-      success: {
-        main: 'rgba(71, 171, 72, 1)',
-        light: 'rgba(222, 247, 236, 1)',
-      },
+
       error: {
         dark: 'rgba(153, 27, 27, 1)',
         main: 'rgba(229, 84, 84, 1)',
@@ -25,7 +22,7 @@ export const withTheme = (component: () => React.ReactNode) => () => {
       },
     },
     typography: {
-      fontFamily: 'Inter',
+      fontFamily: 'Montserrat',
     },
   });
 
