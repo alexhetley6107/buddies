@@ -1,4 +1,5 @@
 import { AppBar, Stack } from '@mui/material';
+import { UserInfo } from 'features';
 import { Logo } from 'shared/ui';
 
 export const Header = () => {
@@ -7,7 +8,7 @@ export const Header = () => {
       position="static"
       elevation={0}
       sx={{
-        height: '50px',
+        height: '55px',
         bgcolor: 'primary.main',
         display: 'flex',
         alignItems: 'center',
@@ -20,6 +21,7 @@ export const Header = () => {
         sx={{ height: '100%', width: '1000px' }}
       >
         <Logo onHead />
+        <UserInfo />
       </Stack>
     </AppBar>
   );
