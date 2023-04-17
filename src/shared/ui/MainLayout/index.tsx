@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import { FC, ReactNode } from 'react';
 import { Outlet } from 'react-router-dom';
 
@@ -16,7 +16,28 @@ export const MainLayout: FC<Props> = ({ header, navbar }) => {
       }}
     >
       {header}
-      <Outlet />
+      <Stack
+        alignItems="center"
+        sx={{
+          maxWidth: '100vw',
+          height: 'calc(100vh - 55px)',
+          overflow: 'auto',
+
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: 'primary.dark',
+            borderRadius: '30px',
+            border: '3px solid white',
+          },
+          '&::-webkit-scrollbar': {
+            width: '15px',
+            backgroundColor: 'info.main',
+          },
+        }}
+      >
+        <Box sx={{ minHeight: '100%', width: '1000px', bgcolor: 'info.dark' }}>
+          <Outlet />
+        </Box>
+      </Stack>
     </Box>
   );
 };
