@@ -34,7 +34,7 @@ export const withTheme = (component: () => React.ReactNode) => () => {
                 },
                 info: {
                   main: 'rgba(255, 255, 255, 1)',
-                  light: 'rgba(226, 226, 226, 1)',
+                  light: 'rgba(226, 226, 246, 1)',
                   dark: 'rgba(122, 122, 122, 1)',
                 },
                 secondary: {
@@ -55,7 +55,8 @@ export const withTheme = (component: () => React.ReactNode) => () => {
                 },
                 info: {
                   main: 'rgba(255, 255, 255, 1)',
-                  light: 'rgba(226, 226, 226, 1)',
+                  light: 'rgba(226, 226, 246, 1)',
+
                   dark: 'rgba(122, 122, 122, 1)',
                 },
                 secondary: {

@@ -1,3 +1,8 @@
 {
-  "signin": { "en": "SignIn", "ru": "Зарегистрироваться" }
+  "signin": { "en": "Sign In", "ru": "Зарегистрироваться" },
+  "login": { "en": "Log In", "ru": "Войти" },
+  "my_page": { "en": "My Page", "ru": "Моя Страница" },
+  "my_friends": { "en": "My Friends", "ru": "Моя Страница" },
+  "my_messages": { "en": "My Messages", "ru": "Моя Страница" },
+  "my_news": { "en": "My News", "ru": "Моя Страница" }
 }

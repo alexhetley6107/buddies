@@ -48,7 +48,7 @@ export const MainLayout: FC<Props> = ({ children, header, navbar, aside }) => {
           },
         }}
       >
-        <Box sx={{ minHeight: '100%', width: '100%', bgcolor: 'info.dark' }}>{children}</Box>
+        <Box sx={{ minHeight: '100%', width: '100%' }}>{children}</Box>
       </Stack>
     </Box>
   );
