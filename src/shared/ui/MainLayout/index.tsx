@@ -1,13 +1,14 @@
-import { Box, Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 import { FC, ReactNode } from 'react';
 import { Outlet } from 'react-router-dom';
 
 interface Props {
   header: ReactNode;
   navbar: ReactNode;
+  aside?: ReactNode;
 }
 
-export const MainLayout: FC<Props> = ({ header, navbar }) => {
+export const MainLayout: FC<Props> = ({ header, navbar, aside }) => {
   return (
     <Box
       sx={{
@@ -16,11 +17,23 @@ export const MainLayout: FC<Props> = ({ header, navbar }) => {
       }}
     >
       {header}
+      <Stack direction="row" width="100%" justifyContent="center" px={{ lg: '20px', xl: '100px' }}>
+        <Box position="relative" width="100%">
+          <Box position="absolute" top={60} left="0">
+            {navbar}
+          </Box>
+          <Box position="absolute" top={60} right="0">
+            {aside}
+          </Box>
+        </Box>
+      </Stack>
+
       <Stack
         alignItems="center"
         sx={{
+          px: { lg: '250px', xl: '350px' },
           maxWidth: '100vw',
-          height: 'calc(100vh - 55px)',
+          height: '100%',
           overflow: 'auto',
           bgcolor: 'secondary.main',
 
@@ -35,7 +48,7 @@ export const MainLayout: FC<Props> = ({ header, navbar }) => {
           },
         }}
       >
-        <Box sx={{ minHeight: '100%', width: '1000px', bgcolor: 'info.dark' }}>
+        <Box sx={{ minHeight: '100%', width: '100%', bgcolor: 'info.dark' }}>
           <Outlet />
         </Box>
       </Stack>

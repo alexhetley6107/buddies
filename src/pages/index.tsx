@@ -8,10 +8,10 @@ import { PostsPage } from './PostsPage';
 import { FullPostPage } from './FullPostPage';
 import { FriendsPage } from './FriendsPage';
 import { CommonLayout, MainLayout } from 'shared/ui';
-import { Header } from 'widgets';
+import { Header, Navigation } from 'widgets';
 
 const commonRoutes = [
-  { path: '/', element: <LoginPage /> },
+  { path: '/login', element: <LoginPage /> },
   { path: '/register', element: <RegisterPage /> },
   { path: '/*', element: <NotFoundPage /> },
 ];
@@ -27,12 +27,12 @@ const privateRoutes = [
 export const Routing = () => {
   return (
     <Routes>
-      {/* <Route element={<CommonLayout />}>
+      <Route element={<CommonLayout />}>
         {commonRoutes.map((route) => (
           <Route key={route.path} path={route.path} element={route.element} />
         ))}
-      </Route> */}
-      <Route element={<MainLayout header={<Header />} navbar={<></>} />}>
+      </Route>
+      <Route element={<MainLayout header={<Header />} navbar={<Navigation />} />}>
         {privateRoutes.map((route) => (
           <Route key={route.path} path={route.path} element={route.element} />
         ))}

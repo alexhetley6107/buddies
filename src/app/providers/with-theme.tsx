@@ -59,7 +59,7 @@ export const withTheme = (component: () => React.ReactNode) => () => {
                   dark: 'rgba(122, 122, 122, 1)',
                 },
                 secondary: {
-                  main: 'rgba(0, 0, 0, 1)',
+                  main: 'rgba(40, 40, 40, 1)',
                 },
                 error: {
                   dark: 'rgba(153, 27, 27, 1)',

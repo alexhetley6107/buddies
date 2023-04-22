@@ -7,9 +7,9 @@ export const UserInfo = () => {
   const toggle = useColorMode();
   return (
     <Row>
-      <Typography sx={{ mr: '15px', fontWeight: 600 }}>John Dou</Typography>
-      <Avatar sx={{ bgcolor: 'white' }} onClick={toggle}>
-        <PersonIcon color="primary" />
+      <Typography sx={{ color: 'primary.dark', mr: '15px', fontWeight: 600 }}>John Dou</Typography>
+      <Avatar sx={{ bgcolor: 'primary.dark' }} onClick={toggle}>
+        <PersonIcon color="info" />
       </Avatar>
     </Row>
   );

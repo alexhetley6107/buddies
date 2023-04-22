@@ -9,12 +9,12 @@ interface Props {
 export const Logo: FC<Props> = () => {
   return (
     <Stack direction="row" alignItems="center">
-      <FaceIcon sx={{ fontSize: '38px', mb: '2px' }} />
+      <FaceIcon sx={{ fontSize: '38px', mb: '2px', color: 'primary.dark' }} />
       <Typography
         variant="h2"
         sx={{
           textTransform: 'uppercase',
-          color: 'info.main',
+          color: 'primary.dark',
           fontWeight: 400,
           fontSize: '36px',
           fontFamily: 'DynaPuff',
