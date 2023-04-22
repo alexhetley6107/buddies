@@ -1,14 +1,14 @@
-import { Box, Container, Stack } from '@mui/material';
-import { FC, ReactNode } from 'react';
+import { Box, Stack } from '@mui/material';
+import { FC, ReactNode, PropsWithChildren } from 'react';
 import { Outlet } from 'react-router-dom';
 
-interface Props {
+interface Props extends PropsWithChildren {
   header: ReactNode;
   navbar: ReactNode;
   aside?: ReactNode;
 }
 
-export const MainLayout: FC<Props> = ({ header, navbar, aside }) => {
+export const MainLayout: FC<Props> = ({ children, header, navbar, aside }) => {
   return (
     <Box
       sx={{
@@ -48,9 +48,7 @@ export const MainLayout: FC<Props> = ({ header, navbar, aside }) => {
           },
         }}
       >
-        <Box sx={{ minHeight: '100%', width: '100%', bgcolor: 'info.dark' }}>
-          <Outlet />
-        </Box>
+        <Box sx={{ minHeight: '100%', width: '100%', bgcolor: 'info.dark' }}>{children}</Box>
       </Stack>
     </Box>
   );
