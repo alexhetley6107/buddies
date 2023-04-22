@@ -16,7 +16,7 @@ export const Logo: FC<Props> = () => {
           textTransform: 'uppercase',
           color: 'primary.dark',
           fontWeight: 400,
-          fontSize: '36px',
+          fontSize: '40px',
           fontFamily: 'DynaPuff',
         }}
       >

@@ -1,6 +1,6 @@
 import { useTheme } from '@mui/material';
 import { ActionIcon } from 'shared/ui';
-import { useColorMode } from 'shared/hooks/useColorMode';
+import { useColorMode } from 'shared/hooks';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
