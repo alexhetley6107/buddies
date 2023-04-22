@@ -22,6 +22,7 @@ export const MainLayout: FC<Props> = ({ header, navbar }) => {
           maxWidth: '100vw',
           height: 'calc(100vh - 55px)',
           overflow: 'auto',
+          bgcolor: 'secondary.main',
 
           '&::-webkit-scrollbar-thumb': {
             backgroundColor: 'primary.dark',
