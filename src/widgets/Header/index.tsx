@@ -9,19 +9,20 @@ export const Header = () => {
       elevation={0}
       sx={{
         height: '55px',
-        bgcolor: 'transparent',
-        display: 'flex',
-        alignItems: 'center',
+        bgcolor: { xs: 'secondary.main', lg: 'transparent' },
       }}
     >
       <Stack
         direction="row"
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent={{ xs: 'center', lg: 'space-between' }}
         sx={{ height: '100%', width: '100%', px: { lg: '20px', xl: '100px' } }}
       >
         <Logo onHead />
-        <UserInfo />
+
+        <Box display={{ xs: 'none', lg: 'block' }}>
+          <UserInfo />
+        </Box>
       </Stack>
     </AppBar>
   );

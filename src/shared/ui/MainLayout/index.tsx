@@ -33,7 +33,8 @@ export const MainLayout: FC<Props> = ({ children, header, navbar, aside }) => {
         sx={{
           px: { lg: '250px', xl: '350px' },
           maxWidth: '100vw',
-          height: '100%',
+          mt: { xs: '55px', lg: 0 },
+          height: { xs: 'calc(100% - 55px)', lg: '100%' },
           overflow: 'auto',
           bgcolor: 'secondary.main',
 
