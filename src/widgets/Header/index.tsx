@@ -5,11 +5,10 @@ import { Logo } from 'shared/ui';
 export const Header = () => {
   return (
     <AppBar
-      // position="static"
       elevation={0}
       sx={{
         height: '55px',
-        bgcolor: { xs: 'secondary.main', lg: 'transparent' },
+        bgcolor: { xs: 'secondary.light', lg: 'transparent' },
       }}
     >
       <Stack

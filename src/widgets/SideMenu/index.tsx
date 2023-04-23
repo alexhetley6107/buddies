@@ -24,9 +24,9 @@ export const SideMenu = () => {
         <IconButton
           onClick={toggleMenu}
           sx={{
-            color: 'info.main',
-            bgcolor: 'primary.main',
-            '&:hover': { color: 'info.main', bgcolor: 'primary.main' },
+            color: 'primary.light',
+            bgcolor: 'primary.dark',
+            '&:hover': { color: 'primary.light', bgcolor: 'primary.dark' },
           }}
         >
           <MenuIcon sx={{ fontSize: '36px' }} />
@@ -52,7 +52,7 @@ export const SideMenu = () => {
         <Navigation />
 
         <Stack flexGrow={1} />
-        <Row justifyContent="center" mb={4}>
+        <Row justifyContent="center" mb={6}>
           <IconButton
             onClick={toggleMenu}
             sx={{

@@ -28,44 +28,36 @@ export const withTheme = (component: () => React.ReactNode) => () => {
           ...(mode === 'light'
             ? {
                 primary: {
-                  light: 'rgba(66, 27, 111, 0.3)',
-                  main: 'rgb(76, 20, 155)',
+                  light: 'rgba(255, 255, 255, 1)',
+                  main: 'rgb(70, 12, 114)',
                   dark: 'rgb(70, 12, 114)',
                 },
                 info: {
                   main: 'rgba(255, 255, 255, 1)',
                   light: 'rgba(226, 226, 246, 1)',
-                  dark: 'rgba(122, 122, 122, 1)',
+                  dark: 'rgba(180, 180, 180, 1)',
                 },
                 secondary: {
-                  main: 'rgba(255, 255, 255, 1)',
-                },
-
-                error: {
-                  dark: 'rgba(153, 27, 27, 1)',
-                  main: 'rgba(229, 84, 84, 1)',
-                  light: 'rgba(254, 226, 226, 1)',
+                  main: 'rgba(40, 40, 40, 1)',
+                  light: 'rgba(255, 255, 255, 1)',
+                  dark: 'rgba(40, 40, 40, 1)',
                 },
               }
             : {
                 primary: {
-                  light: 'rgba(66, 27, 111, 0.3)',
-                  main: 'rgb(76, 20, 155)',
-                  dark: 'rgb(70, 12, 114)',
+                  light: 'rgb(70, 12, 114)',
+                  main: 'rgb(70, 12, 114)',
+                  dark: 'rgba(255, 255, 255, 1)',
                 },
                 info: {
                   main: 'rgba(255, 255, 255, 1)',
-                  light: 'rgba(226, 226, 246, 1)',
-
-                  dark: 'rgba(122, 122, 122, 1)',
+                  light: 'rgba(180, 180, 180, 1)',
+                  dark: 'rgba(226, 226, 246, 1)',
                 },
                 secondary: {
                   main: 'rgba(40, 40, 40, 1)',
-                },
-                error: {
-                  dark: 'rgba(153, 27, 27, 1)',
-                  main: 'rgba(229, 84, 84, 1)',
-                  light: 'rgba(254, 226, 226, 1)',
+                  light: 'rgba(40, 40, 40, 1)',
+                  dark: 'rgba(255, 255, 255, 1)',
                 },
               }),
         },

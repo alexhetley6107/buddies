@@ -36,16 +36,17 @@ export const MainLayout: FC<Props> = ({ children, header, navbar, aside }) => {
           mt: { xs: '55px', lg: 0 },
           height: { xs: 'calc(100% - 55px)', lg: '100%' },
           overflow: 'auto',
-          bgcolor: 'secondary.main',
+          bgcolor: 'secondary.light',
 
           '&::-webkit-scrollbar-thumb': {
             backgroundColor: 'primary.dark',
             borderRadius: '30px',
             border: '3px solid white',
+            borderColor: 'secondary.light',
           },
           '&::-webkit-scrollbar': {
             width: '15px',
-            backgroundColor: 'info.main',
+            backgroundColor: 'secondary.light',
           },
         }}
       >
