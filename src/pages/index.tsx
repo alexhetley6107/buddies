@@ -7,7 +7,6 @@ import { MessagesPage } from './MessagesPage';
 import { PostsPage } from './PostsPage';
 import { FullPostPage } from './FullPostPage';
 import { FriendsPage } from './FriendsPage';
-import { Header, Navigation } from 'widgets';
 
 const commonRoutes = [
   { path: '/login', element: <LoginPage /> },

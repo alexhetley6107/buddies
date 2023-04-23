@@ -1,9 +1,9 @@
 import { MainLayout } from 'shared/ui';
-import { Header, Navigation } from 'widgets';
+import { Header, SideMenu } from 'widgets';
 
 export const FriendsPage = () => {
   return (
-    <MainLayout header={<Header />} navbar={<Navigation />}>
+    <MainLayout header={<Header />} navbar={<SideMenu />}>
       <div>FriendsPage</div>
     </MainLayout>
   );

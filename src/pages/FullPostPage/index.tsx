@@ -1,9 +1,9 @@
 import { MainLayout } from 'shared/ui';
-import { Header, Navigation } from 'widgets';
+import { Header, SideMenu } from 'widgets';
 
 export const FullPostPage = () => {
   return (
-    <MainLayout header={<Header />} navbar={<Navigation />}>
+    <MainLayout header={<Header />} navbar={<SideMenu />}>
       <div>FullPostPage</div>
     </MainLayout>
   );
